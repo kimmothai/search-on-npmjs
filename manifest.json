@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Search On Npmjs",
+  "description": "Search the highlighted text on Npmjs using the context menu (right click).",
+  "version": "0.0.2",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{12328db8-9958-4109-81bb-6bb6bbd7d241}"
+    }
+  },
+  "icons": {
+    "128": "icons/icon-128.png",
+    "64": "icons/icon-64.png",
+    "32": "icons/icon-32.png",
+    "16": "icons/icon-16.png"
+  },
+  "web_accessible_resources": [
+    "icons/*.png"
+  ],
+  "permissions": [
+    "contextMenus",
+    "tabs"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
+}
